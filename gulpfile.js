@@ -9,12 +9,12 @@ const DIST = 'dist';
 function copy (cb) {
 	src('app/js/*.js')
 		.pipe(dest(`${DIST}/js/`));
-	src('app/fonts/**/*')
-		.pipe(dest(`${DIST}/fonts/`));
-	src('app/img/**/*')
-		.pipe(dest(`${DIST}/img/`));
-	src('app/libs/**/*')
-		.pipe(dest(`${DIST}/libs/`));
+	src('app/assets/fonts/**/*')
+		.pipe(dest(`${DIST}/assets/fonts/`));
+	src('app/assets/images/**/*')
+		.pipe(dest(`${DIST}/assets/images/`));
+	// src('app/libs/**/*')
+	// 	.pipe(dest(`${DIST}/libs/`));
 	src('app/*.html')
 		.pipe(dest(`${DIST}/`));
 	cb();
@@ -46,10 +46,10 @@ function browserSync(cb) {
 		online: true,
 		//tunnel: 'artdev', // Attempt to use the URL https://yousutename.loca.lt
 	});
-	watch('app/fonts/*/*.*', copy);
-	watch('app/img/**/*', copy);
+	watch('app/assets/fonts/*/*.*', copy);
+	watch('app/assets/images/**/*', copy);
 	watch('app/js/*', copy);
-	watch('app/libs/**/*', copy);
+	//watch('app/libs/**/*', copy);
 	watch(`app/scss/*.scss`, generateCSS).on('change', sync.reload);
 	watch('app/*.html', copy).on('change', sync.reload);
 	cb();

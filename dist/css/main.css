@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "Overpass-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/Overpass/Overpass-Regular.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Overpass-Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../assets/fonts/Overpass/Overpass-Bold.ttf") format("ttf");
+}
+html * {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 10px;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  font-family: "Overpass-Regular", sans-serif;
+  font-weight: 400;
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(216deg, 12%, 8%);
+  line-height: 1.5;
+}
+
+h1 {
+  font-family: "Overpass-Bold", sans-serif;
+  font-weight: 700;
+  font-size: 2.6rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+ul li {
+  list-style-type: none;
+  width: 5rem;
+  height: 4.7rem;
+  line-height: 4.7rem;
+  text-align: center;
+  background-color: hsl(213deg, 19%, 18%);
+  border-radius: 50%;
+  font-size: 1.8rem;
+}
+
+.btn {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+  margin-top: 3.4rem;
+  line-height: 4.6rem;
+  border-radius: 2em;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  border: none;
+  box-shadow: none;
+}
+
+.container {
+  max-width: 144rem;
+  min-height: 96vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.card {
+  position: relative;
+  height: 41.3rem;
+  width: 41rem;
+  border-radius: 1.9em;
+  background: hsl(213deg, 19%, 18%);
+  background: radial-gradient(ellipse at 50% 0%, rgb(35, 42, 50) 0%, rgb(32, 39, 50) 5%, rgb(23, 30, 40) 100%);
+}
+.card-put {
+  opacity: 1;
+  z-index: 10;
+  padding: 0 4rem 0 3rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.card-put .icon {
+  width: 4.7rem;
+  height: 4.7rem;
+  background-color: hsl(213deg, 19%, 18%);
+  text-align: center;
+  font-size: 3rem;
+  color: hsl(25deg, 97%, 53%);
+  margin-top: 3rem;
+  border-radius: 50%;
+}
+.card-put h1 {
+  margin-top: 3rem;
+}
+.card-put p {
+  margin-top: 1rem;
+}
+.card-put .row-banch {
+  margin-top: 3rem;
+}
+.card-push {
+  opacity: 0;
+  z-index: 9;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 11px;
+  text-align: center;
+  color: hsl(25deg, 97%, 53%);
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}

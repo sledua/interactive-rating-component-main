@@ -1,0 +1,10 @@
+@mixin font($fname, $fstyle, $fweight, $furl) {
+	@font-face {
+		font-family: $fname;
+		font-style: $fstyle;
+		font-weight: $fweight;
+		src: url($furl) format('ttf');
+	}
+}
+@include font("Overpass-Regular", normal, 400, "../assets/fonts/Overpass/Overpass-Regular.ttf");
+@include font("Overpass-Bold", normal, 700, "../assets/fonts/Overpass/Overpass-Bold.ttf");
