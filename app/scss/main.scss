@@ -23,6 +23,7 @@ h1 {
 }
 p {
 	font-size: 1.5rem;
+	color: $mediumGrey;
 }
 ul {
 	display: flex;
@@ -36,7 +37,18 @@ ul {
 		background-color: $darkBlue;
 		border-radius: 50%;
 		font-size: 1.8rem;
+		color: $mediumGrey;
+		transition: all 500ms ease;
+		&:hover {
+			cursor: pointer;
+			background-color: $orange;
+			color: $white;
+		}
 	}
+}
+.active {
+	color: $white;
+	background-color: $lightGrey;
 }
 .btn {
 	background-color: $orange;
@@ -47,7 +59,13 @@ ul {
 	font-size: 1.7rem;
 	text-transform: uppercase;
 	border: none;
-    box-shadow: none;
+	box-shadow: none;
+	transition: all 500ms ease;
+	&:hover {
+		cursor: pointer;
+		background-color: $white;
+		color: $orange;
+	}
 }
 .container {
 	max-width: 144rem;
