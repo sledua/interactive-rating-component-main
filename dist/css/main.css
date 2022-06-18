@@ -131,7 +131,37 @@ ul li:hover {
 }
 .card-push {
   opacity: 0;
-  z-index: 9;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 4rem 0 3rem;
+}
+.card-push img {
+  margin-top: 4.4rem;
+}
+.card-push span {
+  margin-top: 3.3rem;
+  font-size: 1.7rem;
+  background-color: hsla(217deg, 12%, 63%, 0.38);
+  color: hsl(25deg, 97%, 53%);
+  display: block;
+  padding: 0 1.5rem;
+  border-radius: 1em;
+}
+.card-push h2 {
+  margin-top: 3.4rem;
+  font-size: 2.7rem;
+}
+.card-push p {
+  margin-top: 1.2rem;
+  font-size: 1.53rem;
 }
 
 .attribution {
