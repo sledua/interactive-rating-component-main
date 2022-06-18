@@ -1,7 +1,7 @@
 {
   "name": "interactive-rating-component-main",
   "version": "0.0.1",
-  "description": "frontendmrntor chaleng new stage",
+  "description": "frontendmrntor challenge new stage",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

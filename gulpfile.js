@@ -48,7 +48,7 @@ function browserSync(cb) {
 	});
 	watch('app/assets/fonts/*/*.*', copy);
 	watch('app/assets/images/**/*', copy);
-	watch('app/js/*', copy);
+	watch('app/js/*.js', copy).on('change', sync.reload);
 	//watch('app/libs/**/*', copy);
 	watch(`app/scss/*.scss`, generateCSS).on('change', sync.reload);
 	watch('app/*.html', copy).on('change', sync.reload);

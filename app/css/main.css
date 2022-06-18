@@ -87,7 +87,7 @@ ul li:hover {
 
 .container {
   max-width: 144rem;
-  min-height: 96vh;
+  min-height: 91vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -126,7 +126,7 @@ ul li:hover {
 .card-put p {
   margin-top: 1rem;
 }
-.card-put .row-banch {
+.card-put .row-bench {
   margin-top: 3rem;
 }
 .card-push {
