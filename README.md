@@ -1,3 +1,0 @@
-# interactive-rating-component-main
-
-
